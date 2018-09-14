@@ -1,0 +1,9 @@
+#container1 {
+    display: grid;
+    grid-template-column: 2fr 2fr 1fr 1fr 1fr;
+    grid-template-row: 1fr;
+}
+
+#nav-bar {
+    /*position: fixed;*/
+}
