@@ -1,18 +1,24 @@
 <html>
     <head>
         <title>D20 Dice</title>
-        <link rel="stylesheet" href="style.css"
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header id="header">
             <div id="container1">
-                <img src="https://geekandsundry.com/wp-content/uploads/2015/10/d20.jpg" id="header-image" height="90px" width="180px">
-                <h1>D20 Dice</h1>
+                <img src="https://geekandsundry.com/wp-content/uploads/2015/10/d20.jpg" id="header-image" height= "55px" width="90px">
+                <h1 id="d20">D20 Dice</h1>
                 <nav id="nav-bar">
-                    <ul>
-                        <li><a class="nav-link" href="about">About</a></li>
-                        <li><a class="nav-link" href="selection">Selection</a></li>
-                        <li><a class="nav-link" href="purchase">Purchase</a></li>        
+                    <ul id="nav-columns">
+                        <div id="about1">
+                            <li><a class="nav-link" href="about">About</a></li>
+                        </div>
+                        <div id="selection1">
+                            <li><a class="nav-link" href="selection">Selection</a></li>
+                        </div>
+                        <div id="purchase1">
+                            <li><a class="nav-link" href="purchase">Purchase</a></li>        
+                        </div>
                     </ul>
                 </nav>
             </div>
@@ -20,14 +26,16 @@
 
         <div id="container2">
             <section id="about">
-                <iframe width="360px" height="200px" src="https://www.youtube.com/embed/jKhr300nfgs"></iframe>
+                <iframe id="d20video" width="360px" height="200px" src="https://www.youtube.com/embed/jKhr300nfgs"></iframe>
             </section>
         </div>
 
         <form id="form">
-            Send us an email for more info!
+            <p id="sendUs">Send us an email for more info!</p>
             <input id="email" type="email" placeholder="Email">
             <button id="submit" type="submit" action="https://www.freecodecamp.com/email-submit">Submit</button>
         </form>
+
+
     </body>
 </html>
