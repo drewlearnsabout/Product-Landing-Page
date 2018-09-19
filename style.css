@@ -1,19 +1,28 @@
 body {
     max-width: 1366px;
+    font-family: 'Cabin', sans-serif;
+}
+
+#header {
+    background: linear-gradient(to bottom, #cc3300 68%, #333300 100%);
+    color: white;
 }
 
 #container1 {
     display: grid;
-    grid-template-column: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     max-width: auto;
     justify-items: center;
     align-items: center;
     grid-template-areas: 
-        "a b . c c";
+        "a b b c c";
 }
 
 #header-image {
     grid-area: a;
+    border-radius: 5px;
+    height: 55px;
+    width: 90px;
 }
 
 #d20 {
@@ -28,6 +37,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1em;
+    list-style-type: none;
 }
 
 #about1 {
@@ -42,13 +52,34 @@ body {
     grid-column: 3 / 4;
 }
 
-ul {
-    list-style-type: none;
-}
-
 .nav-link {
     text-decoration: none;
     color: black;
+}
+
+#list1 {
+    list-style-image:; 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#dice1 {
+    grid-area: 1 / 2 / 2 / 5;
+}
+
+#dice2 {
+    grid-area: 2 / 2  / 3 / 5;
+}
+
+#dice3 {
+    grid-area: 3 / 2 / 4 / 5;
+}
+
+#container2 {
+    background: linear-gradient(to bottom, #cc3300 68%, #333300 100%);
+    width: 100%;
+    height: 250px;
 }
 
 #about {
@@ -62,6 +93,7 @@ iframe {
     justify-self: center;
     align-self: center;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
 #form {
