@@ -5,17 +5,17 @@ body {
 
 #header {
     background: linear-gradient(to bottom, #cc3300 68%, #333300 100%);
-    color: white;
+    color: rgb(238, 205, 133);
 }
 
 #container1 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     max-width: auto;
     justify-items: center;
     align-items: center;
     grid-template-areas: 
-        "a b b c c";
+        "a b b c";
 }
 
 #header-image {
@@ -27,6 +27,7 @@ body {
 
 #d20 {
     grid-area: b;
+    justify-self: left;
 }
 
 #nav-bar {
@@ -44,12 +45,24 @@ body {
     grid-column: 1 / 2;
 }
 
+#about1:hover {
+    transform: scale(1.1);
+}
+
 #selection1 {
     grid-column: 2 / 3;
 }
 
+#selection1:hover {
+    transform: scale(1.1);
+}
+
 #purchase1 {
     grid-column: 3 / 4;
+}
+
+#purchase1:hover {
+    transform: scale(1.1);
 }
 
 .nav-link {
@@ -58,10 +71,11 @@ body {
 }
 
 #list1 {
-    list-style-image:; 
+    list-style-image: none; 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
+    font-size: 20px;
 }
 
 #dice1 {
@@ -119,6 +133,19 @@ iframe {
     grid-area: 3 / 2 / 4 / 3;
     justify-self: center;
     align-self: center;
+}
+
+@media (max-width: 550px) {
+    #container1 {
+        grid-gap: 5px;
+        grid-template-areas:
+            ". a b ."
+            ". c c .";
+    }
+
+    #list1 {
+        font-size: 16px;
+    }
 }
 
 
