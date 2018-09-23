@@ -1,11 +1,11 @@
 body {
     max-width: 1366px;
     font-family: 'Cabin', sans-serif;
+    background: #333300;
 }
 
 #header {
-    background: linear-gradient(to bottom, #cc3300 68%, #333300 100%);
-    color: rgb(238, 205, 133);
+    background: linear-gradient(to bottom, #333300 0%, #cc3300 50%, #333300 100%);
 }
 
 #container1 {
@@ -21,13 +21,14 @@ body {
 #header-image {
     grid-area: a;
     border-radius: 5px;
-    height: 55px;
+    height: 80px;
     width: 90px;
 }
 
 #d20 {
     grid-area: b;
     justify-self: left;
+    color: rgb(238, 205, 133);
 }
 
 #nav-bar {
@@ -37,8 +38,9 @@ body {
 #nav-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
+    grid-gap: 20px;
     list-style-type: none;
+    padding-right: 5px;
 }
 
 #about1 {
@@ -46,7 +48,9 @@ body {
 }
 
 #about1:hover {
-    transform: scale(1.1);
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 #selection1 {
@@ -54,7 +58,9 @@ body {
 }
 
 #selection1:hover {
-    transform: scale(1.1);
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 #purchase1 {
@@ -62,7 +68,9 @@ body {
 }
 
 #purchase1:hover {
-    transform: scale(1.1);
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 .nav-link {
@@ -76,6 +84,10 @@ body {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
     font-size: 20px;
+    grid-area: 1 / 2;
+    z-index: 1;
+    color: white;
+    background: linear-gradient(to bottom,#333300 0%, #cc3300 68%, #333300 100%);
 }
 
 #dice1 {
@@ -91,7 +103,7 @@ body {
 }
 
 #container2 {
-    background: linear-gradient(to bottom, #cc3300 68%, #333300 100%);
+    background: linear-gradient(to bottom,#333300 0%, #cc3300 68%, #333300 100%);
     width: 100%;
     height: 250px;
 }
@@ -108,6 +120,8 @@ iframe {
     align-self: center;
     border-radius: 10px;
     margin-top: 20px;
+    width: 450px;
+    height:240px;
 }
 
 #form {
@@ -117,9 +131,10 @@ iframe {
 }
 
 #sendUs {
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: 1 / 1 / 2 / 4;
     justify-self: center;
     align-self: center;
+    color: white;
 }
 
 #email {
@@ -127,12 +142,96 @@ iframe {
     justify-self: center;
     align-self: center;
     grid-row-gap: -5px;
+    border-radius: 5px;
 }
 
 #submit {
     grid-area: 3 / 2 / 4 / 3;
     justify-self: center;
     align-self: center;
+    border-radius: 5px;
+    color: rgb(161, 59, 59);
+}
+
+#submit:hover {
+    cursor: pointer;
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#purchasing {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "a"
+    "b"
+    "c";
+    margin-top: 20px;
+}
+
+#low {
+    grid-row: a;
+}
+
+#mid {
+    grid-row: b;
+}
+
+#high {
+    grid-row: c;
+}
+
+.diceBuy {
+    color: white;
+    justify-self: center;
+    display: grid;
+}
+
+.dicePic {
+    height: 180px;
+    width: 180px;
+    border: 5px solid rgb(230, 186, 92);
+    border-radius: 10px;
+}
+
+.dicePic:hover {
+    cursor: pointer;
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.diceDescription {
+    justify-self: center;
+}
+
+.pricing {
+    justify-self: center;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 768px) {
+    .dicePic {
+        height: 250px;
+        width: 250px;
+    }
+
+    #purchasing {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "a b c";
+    }
 }
 
 @media (max-width: 550px) {
@@ -145,6 +244,11 @@ iframe {
 
     #list1 {
         font-size: 16px;
+    }
+
+    iframe {
+        height: 170px;
+        width: 290px;
     }
 }
 

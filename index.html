@@ -5,9 +5,11 @@
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     </head>
     <body>
+
+        <!-- Header and Navigation bar -->
         <header id="header">
             <div id="container1">
-                <img id="header-image" src="https://geekandsundry.com/wp-content/uploads/2015/10/d20.jpg" alt="D20 dice">
+                <img id="header-image" src="https://mbtskoudsalg.com/images/d20-icon-png-3.png" alt="D20 dice logo">
                 <h1 id="d20">D20 Dice</h1>
                 <nav id="nav-bar">
                     <ul id="nav-columns">
@@ -25,25 +27,47 @@
             </div>
         </header>
 
-        <section id="explanation">
-            <ul id="list1">
-                <li id="dice1" alt="Dice bullet point"><p>Dice can range in size from 5mm all the way up to 100mm or more.</p></li>
-                <li id="dice2" alt="Dice bullet point"><p>Dice "standard" sizes include: 5mm, 12mm, 16mm, 19mm, 25mm, and 50mm.</p></li>
-                <li id="dice3" alt="Dice bullet point"><p>Below are examples of common dice dimensions and for purchasing</p></li>
-            </ul>
-        </section>
-        <div id="container2">
-            <section id="about">
-                <iframe id="d20video" width="360px" height="200px" src="https://www.youtube.com/embed/jKhr300nfgs" alt="Video about D20 dice"></iframe>
-            </section>
-        </div>
-
+        <!-- Form submission -->
         <form id="form">
             <p id="sendUs">Send us an email for more info!</p>
             <input id="email" type="email" placeholder="Email">
             <button id="submit" type="submit" action="https://www.freecodecamp.com/email-submit">Submit</button>
         </form>
 
+        <!-- Descriptions for D20 dice -->
+        <section id="explanation">
+            <ul id="list1">
+                <li id="dice1" alt="Dice bullet point"><p>Dice can range in size from 5mm all the way up to 100mm or more.</p></li>
+                <li id="dice2" alt="Dice bullet point"><p>"Standard" dice sets include: 7 piece sets, sometimes with a carrying pouch</p></li>
+                <li id="dice3" alt="Dice bullet point"><p>Below are examples of common dice sets for purchasing</p></li>
+            </ul>
+        </section>
+        
+        <!-- This is the video -->
+        <div id="container2">
+            <section id="about">
+                <iframe id="d20video" width="360px" height="200px" src="https://www.youtube.com/embed/jKhr300nfgs" alt="Video about D20 dice"></iframe>
+            </section>
+        </div>
+
+        <!-- Purchasing Dice -->
+        <div id="purchasing">
+            <article id="low" class="diceBuy">
+                <p class="diceDescription">7pc/set</p>
+                <img id="lowPic" class="dicePic" src="https://i.ebayimg.com/images/g/IdUAAOSwvD5aRKSm/s-l640.jpg" alt="7 piece set of dice">
+                <p class="pricing">$0.99</p>
+            </article>
+            <article id="mid" class="diceBuy">
+                <p class="diceDescription">7pc/set Antique</p>
+                <img id="midPic" class="dicePic" src="https://i.ebayimg.com/images/g/ptYAAOSwVUtbWrCr/s-l640.jpg" alt="Antique 7 piece set of dice">
+                <p class="pricing">$1.99</p>
+            </article>
+            <article id="high" class="diceBuy">
+                <p class="diceDescription">10pc/set Antique w/ bag</p>
+                <img id="highPic" class="dicePic" src="https://i.ebayimg.com/images/g/v14AAOSwe6ZaVezu/s-l640.jpg" alt="Antique 7 piece set of dice with carrying pouch">
+                <p class="pricing">$2.50</p>
+            </article>
+        </div>
 
     </body>
 </html>
