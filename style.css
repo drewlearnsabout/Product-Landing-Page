@@ -33,6 +33,7 @@ body {
     justify-self: left;
     color: rgb(238, 205, 133);
     text-shadow: 2px 2px 10px red;
+    cursor: default;
 }
 
 #nav-bar {
@@ -228,6 +229,53 @@ iframe {
 
 .pricing {
     justify-self: center;
+}
+
+footer {
+    height: 8em;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient(to bottom, #333300 0%, #cc3300 50%, #333300 100%);
+}
+
+#footerList {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "a b c d e f";
+    list-style-type: none;
+    grid-gap: 15px;
+    justify-items: end;
+}
+
+#copyright {
+    align-self: center;
+    color: rgb(238, 205, 133);
+    text-shadow: 2px 2px 10px red;
+}
+
+#privacy {
+    grid-area: b;
+    cursor: pointer;
+    color: rgb(238, 205, 133);
+    text-shadow: 2px 2px 10px red;
+}
+
+#terms {
+    grid-area: c;
+    cursor: pointer;
+    color: rgb(238, 205, 133);
+    text-shadow: 2px 2px 10px red;
+}
+
+#contact {
+    grid-area: d;
+    cursor: pointer;
+    color: rgb(238, 205, 133);
+    text-shadow: 2px 2px 10px red;
 }
 
 @keyframes beat {
