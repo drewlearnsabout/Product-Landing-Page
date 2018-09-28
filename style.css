@@ -21,7 +21,7 @@ body {
         "a b b c";
 }
 
-#header-image {
+#header-img {
     grid-area: a;
     border-radius: 5px;
     height: 80px;
@@ -150,7 +150,7 @@ iframe {
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-#sendUs {
+#description {
     grid-area: 1 / 1 / 2 / 4;
     justify-self: center;
     align-self: center;
